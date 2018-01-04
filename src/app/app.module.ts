@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 
 
@@ -18,7 +19,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuardService } from "./auth-guard.service";
 import { AuthService } from './auth.service';
 import { LoginModule } from './login/login.module';
-import { CrisisCenterComponent } from './crisis-center/crisis-center.component';
 import { CoreModule } from './core/core.module'
 
 @NgModule({
@@ -30,10 +30,10 @@ import { CoreModule } from './core/core.module'
     HeroDetailComponent,
     // MessagesComponent,
     // DashboardComponent,
-    CrisisCenterComponent,
     // CoreComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
     LoginModule,
